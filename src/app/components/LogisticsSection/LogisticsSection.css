@@ -1,0 +1,83 @@
+.logistics-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    position: relative;
+    gap: 6rem; /* increased spacing between image and text */
+    flex-wrap: nowrap;
+  }
+  
+  .image-container,
+  .text-container {
+    width: 45%; /* slightly reduced to allow larger gap */
+  }
+  
+  .image-container h2 {
+    font-size: 2rem;
+    font-weight: 100; /* Try 200 or 100 for even lighter */
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+  
+  
+  .driver-img {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 2px;
+    margin-top: 1rem;
+  }
+  
+  .text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .text-container p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .bg-overlay {
+    position: absolute;
+    top: -150px;
+    right: -50px;
+    z-index: 0;
+    opacity: 0.05;
+    max-width: 100%;
+  }
+  
+  .bg-img {
+    width: 400px;
+    height: auto;
+  }
+  
+  /* Responsive */
+  @media (max-width: 800px) {
+    .logistics-section {
+      flex-direction: column;
+      text-align: left;
+      padding: 2rem 1rem;
+      gap: 2rem;
+    }
+  
+    .image-container,
+    .text-container {
+      width: 100%;
+    }
+  
+    .bg-img {
+      width: 250px;
+      right: 0;
+    }
+  }
+  
