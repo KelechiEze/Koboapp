@@ -11,8 +11,8 @@ const TestimonialCard = () => {
         <Quotes size={32} weight="fill" color="#fbbf24" className="quote-icon" />
         <p className="testimonial-text">
           So pleased to see the partnership between Unilever Nigeria and Kobo360 continue
-          to grow sustainably. Looking forward to what the future holds as there's certainly
-          more to come."
+          to grow sustainably. Looking forward to what the future holds as there&apos;s certainly
+          more to come.&quot;
         </p>
       </div>
       <div className="testimonial-author">
