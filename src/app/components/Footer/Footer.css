@@ -1,8 +1,18 @@
-.footer {
+/* Global Overflow Fix */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  /* Footer Base */
+  .footer {
     background-color: #0b1831;
     color: #ffffff;
     padding: 3rem 1rem;
     font-family: 'Segoe UI', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
   
   .footer-container {
@@ -12,10 +22,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .footer-brand {
     flex: 1 1 200px;
+    box-sizing: border-box;
   }
   
   .footer-brand p {
@@ -27,6 +40,7 @@
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
+    flex-wrap: wrap;
   }
   
   .social-icons svg {
@@ -45,6 +59,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 2rem;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .footer-links h4 {
@@ -56,6 +72,7 @@
   .footer-links ul {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   
   .footer-links li {
@@ -72,9 +89,10 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    width: 100%;
   }
   
-  /* Responsive for small screens */
+  /* Responsive for tablets and smaller */
   @media (max-width: 768px) {
     .footer-container {
       flex-direction: column;

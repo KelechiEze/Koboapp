@@ -62,7 +62,6 @@
     stroke: #f59e0b; /* Tailwind's amber-500 */
   }
   
-  /* Responsive */
   @media (max-width: 768px) {
     .benefits-container {
       flex-direction: column;
@@ -70,7 +69,8 @@
     }
   
     .benefit-box {
-      width: 100%;
+      width: 90%;            /* Reduced width from 100% to 90% */
+      max-width: 380px;      /* Optional: control the max size */
     }
   }
   

@@ -6,22 +6,25 @@
     margin: 0 auto;
     padding: 4rem 1rem;
     position: relative;
-    gap: 6rem; /* increased spacing between image and text */
+    gap: 6rem;
     flex-wrap: nowrap;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 100%;
   }
   
   .image-container,
   .text-container {
-    width: 45%; /* slightly reduced to allow larger gap */
+    width: 45%;
+    box-sizing: border-box;
   }
   
   .image-container h2 {
     font-size: 2rem;
-    font-weight: 100; /* Try 200 or 100 for even lighter */
+    font-weight: 100;
     margin-bottom: 1rem;
     line-height: 1.3;
   }
-  
   
   .driver-img {
     width: 100%;
@@ -54,6 +57,7 @@
     z-index: 0;
     opacity: 0.05;
     max-width: 100%;
+    overflow-x: hidden;
   }
   
   .bg-img {
@@ -77,6 +81,7 @@
   
     .bg-img {
       width: 250px;
+      height: auto;
       right: 0;
     }
   }

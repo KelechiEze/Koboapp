@@ -1,4 +1,11 @@
-.partner-section {
+/* 🌍 Global Overflow Fix */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  /* Partner Section */
+  .partner-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -7,11 +14,14 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 4rem 1rem;
+    box-sizing: border-box;
+    width: 100%;
   }
   
   .partner-info {
     flex: 1 1 200px;
     min-width: 200px;
+    box-sizing: border-box;
   }
   
   .partner-count {
@@ -34,12 +44,15 @@
     gap: 2rem 1rem;
     align-items: center;
     justify-items: center;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .partner-logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   
   .partner-logo img {

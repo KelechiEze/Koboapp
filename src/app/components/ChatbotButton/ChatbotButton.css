@@ -1,4 +1,11 @@
-.chatbot-btn {
+/* 🌍 Global Overflow Fix */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  /* Chatbot Floating Button */
+  .chatbot-btn {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
@@ -92,19 +99,19 @@
     overflow-y: auto;
   }
   
-  /* Updated Image Styling */
+  /* Bot Image */
   .bot-icon {
     margin-bottom: 1rem;
     border-radius: 50%;
   }
   
-  /* Optional: override font-size from old use */
   .bot-icon img {
     width: 100px;
     height: 100px;
     object-fit: cover;
   }
   
+  /* Text */
   .chatbot-body p {
     color: #888;
     margin: 1rem 0;
@@ -124,7 +131,7 @@
     gap: 0.4rem;
   }
   
-  /* Mobile Responsive */
+  /* 📱 Mobile Responsive */
   @media (max-width: 480px) {
     .chatbot-btn {
       width: 50px;
