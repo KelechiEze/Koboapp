@@ -1,11 +1,19 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
-import './HomeSection.css'; // ✅ corrected
-
-// component continues...
+import './HomeSection.css';
 
 const HomeSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <section className="home-section">
       <div className="left-content">
@@ -28,7 +36,7 @@ const HomeSection = () => {
             <Image src="/images/dhl.png" alt="DHL" width={100} height={40} />
             <Image src="/images/Dangote.png" alt="Dangote" width={100} height={40} />
             <Image src="/images/unilever.png" alt="Unilever" width={100} height={40} />
-            {/* Duplicates for infinite scroll */}
+            {/* Duplicate for infinite scroll effect */}
             <Image src="/images/neywell.png" alt="Neywell" width={100} height={40} />
             <Image src="/images/dhl.png" alt="DHL" width={100} height={40} />
             <Image src="/images/Dangote.png" alt="Dangote" width={100} height={40} />
@@ -42,12 +50,33 @@ const HomeSection = () => {
           <Image src="/images/truck.png" alt="Kobo Truck" width={500} height={300} />
         </div>
         <div className="bottom-row">
-          <Image src="/images/video-preview.png" alt="How it works" width={180} height={100} />
+          <Image
+            src="/images/howkoboworks.png"
+            alt="How it works"
+            width={180}
+            height={100}
+            className="clickable-image"
+            onClick={openModal}
+          />
           <div className="divider"></div>
-          <Image src="/images/award1.png" alt="Awards" width={180} height={100} />
-          <Image src="/images/award2.png" alt="Awards" width={180} height={100} />
+          <Image src="/images/award1.png" alt="Award 1" width={180} height={100} />
+          <Image src="/images/award2.png" alt="Award 2" width={180} height={100} />
         </div>
       </div>
+
+      {isModalOpen && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={e => e.stopPropagation()}>
+            <button className="close-btn" onClick={closeModal}>×</button>
+            <iframe
+              src="https://www.youtube.com/embed/gZTscjn_TTE?si=tvxNxBscABZaMaP2"
+              title="Kobo Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
