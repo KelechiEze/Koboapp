@@ -69,7 +69,7 @@ const HomeSection = () => {
           <div className="modal-content" onClick={e => e.stopPropagation()}>
             <button className="close-btn" onClick={closeModal}>×</button>
             <iframe
-              src="https://www.youtube.com/embed/gZTscjn_TTE?si=tvxNxBscABZaMaP2"
+              src="https://www.youtube.com/embed/vAguJjobykU?si=xTK0_4AJy4ApC48c"
               title="Kobo Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

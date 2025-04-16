@@ -131,7 +131,6 @@
   width: 90%;
   max-width: 800px;
   background-color: #000;
-  border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
@@ -191,6 +190,7 @@
   
     .left-content h1 {
       font-size: 2rem;
+      margin-top: 50px;
     }
   }
   
