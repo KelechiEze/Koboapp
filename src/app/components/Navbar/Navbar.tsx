@@ -69,13 +69,43 @@ const Navbar = () => {
       </ul>
 
       <div className="nav-actions">
-        <select>
-          <option>EN</option>
-          <option>FR</option>
-        </select>
-        <select>
-          <option>State</option>
-        </select>
+        <div className="custom-select">
+          <button className="select-btn">🌐 Language</button>
+          <div className="select-dropdown">
+            <p>🇺🇸 English</p>
+            <p>🇫🇷 French</p>
+            <p>🇪🇸 Spanish</p>
+            <p>🇨🇳 Chinese</p>
+            <p>🇩🇪 German</p>
+            <p>🇳🇬 Yoruba</p>
+          </div>
+        </div>
+
+        <div className="custom-select">
+          <button className="select-btn">🌍 Country</button>
+          <div className="select-dropdown">
+            <p>🇳🇬 Nigeria</p>
+            <p>🇺🇸 USA</p>
+            <p>🇬🇧 United Kingdom</p>
+            <p>🇨🇦 Canada</p>
+            <p>🇰🇪 Kenya</p>
+            <p>🇿🇦 South Africa</p>
+            <p>🇬🇭 Ghana</p>
+            <p>🇺🇬 Uganda</p>
+            <p>🇪🇬 Egypt</p>
+            <p>🇧🇷 Brazil</p>
+            <p>🇦🇪 UAE</p>
+            <p>🇮🇳 India</p>
+            <p>🇨🇳 China</p>
+            <p>🇫🇷 France</p>
+            <p>🇩🇪 Germany</p>
+            <p>🇮🇹 Italy</p>
+            <p>🇯🇵 Japan</p>
+            <p>🇷🇺 Russia</p>
+            <p>🇸🇦 Saudi Arabia</p>
+            <p>🇹🇷 Turkey</p>
+          </div>
+        </div>
       </div>
 
       <button className="hamburger" onClick={toggleMenu}>
