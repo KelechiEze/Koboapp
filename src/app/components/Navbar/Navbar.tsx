@@ -28,11 +28,44 @@ const Navbar = () => {
       </div>
 
       <ul className="nav-links">
-        <li>ABOUT US</li>
-        <li>CARGO OWNERS</li>
-        <li>TRANSPORTERS</li>
-        <li>VAS</li>
-        <li>RESOURCES</li>
+        <li className="nav-item">
+          ABOUT US
+          <div className="dropdown">
+            <p>Who We Are</p>
+          </div>
+        </li>
+        <li className="nav-item">
+          CARGO OWNERS
+          <div className="dropdown">
+            <p>Register</p>
+            <p>Sign In</p>
+            <p>Request a quote</p>
+          </div>
+        </li>
+        <li className="nav-item">
+          TRANSPORTERS
+          <div className="dropdown">
+            <p>Register</p>
+            <p>Login</p>
+          </div>
+        </li>
+        <li className="nav-item">
+          VAS
+          <div className="dropdown">
+            <p>Kobocare</p>
+            <p>Kobosafe</p>
+            <p>Payfasta</p>
+          </div>
+        </li>
+        <li className="nav-item">
+          RESOURCES
+          <div className="dropdown">
+            <p>Careers</p>
+            <p>Blog</p>
+            <p>Contact</p>
+            <p>FAQ</p>
+          </div>
+        </li>
       </ul>
 
       <div className="nav-actions">
